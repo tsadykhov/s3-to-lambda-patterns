@@ -1,0 +1,151 @@
+{
+  "@context": {
+    "name": "http://rdf.data-vocabulary.org/#name",
+    "ingredient": "http://rdf.data-vocabulary.org/#ingredients",
+    "yield": "http://rdf.data-vocabulary.org/#yield",
+    "instructions": "http://rdf.data-vocabulary.org/#instructions",
+    "step": {
+      "@id": "http://rdf.data-vocabulary.org/#step",
+      "@type": "xsd:integer"
+    },
+    "description": "http://rdf.data-vocabulary.org/#description",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "_:b0",
+      "http://schema.org/assets": {
+        "@id": "asset1"
+      },
+      "http://schema.org/borrowers": [
+        {
+          "@id": "borrower1"
+        },
+        {
+          "@id": "borrower2"
+        }
+      ],
+      "http://schema.org/employments": {
+        "@id": "employment1"
+      },
+      "http://schema.org/incomes": {
+        "@id": "income1"
+      },
+      "http://schema.org/services": [
+        {
+          "@id": "argyle"
+        },
+        {
+          "@id": "plaid"
+        }
+      ]
+    },
+    {
+      "@id": "_:b1",
+      "http://schema.org/value": "0.00",
+      "http://schema.org/verified_by": {
+        "@id": "argyle"
+      }
+    },
+    {
+      "@id": "_:b2",
+      "http://schema.org/value": "0.00",
+      "http://schema.org/verified_by": {
+        "@id": "argyle"
+      }
+    },
+    {
+      "@id": "_:b3",
+      "http://schema.org/value": "USD",
+      "http://schema.org/verified_by": {
+        "@id": "argyle"
+      }
+    },
+    {
+      "@id": "_:b4",
+      "http://schema.org/value": "1730.77",
+      "http://schema.org/verified_by": {
+        "@id": "argyle"
+      }
+    },
+    {
+      "@id": "_:b5",
+      "http://schema.org/value": "80.00",
+      "http://schema.org/verified_by": {
+        "@id": "plaid"
+      }
+    },
+    {
+      "@id": "_:b6",
+      "http://schema.org/value": "2020-04-22T00:00:00Z",
+      "http://schema.org/verified_by": {
+        "@id": "argyle"
+      }
+    },
+    {
+      "@id": "argyle",
+      "http://schema.org/document_id": "97f21592-b6b6-352a-91d7-e221bf0dd6e9",
+      "http://schema.org/service_id": "a6b95412-e43a-4584-be9f-1dc101aa349a",
+      "http://schema.org/vendor_name": "argyle"
+    },
+    {
+      "@id": "asset1",
+      "http://schema.org/name": "Stock portfolio"
+    },
+    {
+      "@id": "borrower1",
+      "http://schema.org/assets": {
+        "@id": "asset1"
+      },
+      "http://schema.org/employments": {
+        "@id": "employment1"
+      },
+      "http://schema.org/first_name": "Judy",
+      "http://schema.org/incomes": {
+        "@id": "income1"
+      },
+      "http://schema.org/last_name": "Homeowner",
+      "http://schema.org/middle_name": "L."
+    },
+    {
+      "@id": "borrower2",
+      "http://schema.org/first_name": "Judy2",
+      "http://schema.org/last_name": "Homeowner2",
+      "http://schema.org/middle_name": "L.2"
+    },
+    {
+      "@id": "employment1",
+      "http://schema.org/employer_name": "walmart",
+      "http://schema.org/verified_by": {
+        "@id": "argyle"
+      }
+    },
+    {
+      "@id": "income1",
+      "http://schema.org/bonuses": {
+        "@id": "_:b1"
+      },
+      "http://schema.org/commission": {
+        "@id": "_:b2"
+      },
+      "http://schema.org/currency": {
+        "@id": "_:b3"
+      },
+      "http://schema.org/gross_pay": {
+        "@id": "_:b4"
+      },
+      "http://schema.org/hours": {
+        "@id": "_:b5"
+      },
+      "http://schema.org/payout_date": {
+        "@id": "_:b6"
+      }
+    },
+    {
+      "@id": "plaid",
+      "http://schema.org/document_id": "97f21592-b6b6-352a-91d7-e221bf0dd6e8",
+      "http://schema.org/service_id": "a6b95412-e43a-4584-be9f-1dc101aa3498",
+      "http://schema.org/vendor_name": "plaid"
+    }
+  ]
+}
